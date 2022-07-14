@@ -5,6 +5,7 @@
 
 body {
     padding: 0;
+
 }
 
 li {
@@ -12,20 +13,26 @@ li {
 }
 
 * {
-    font-family: "Epilogue","Times New Roman";
+    font-family: "Epilogue", "Times New Roman";
     box-sizing: border-box;
 }
 
-.wrapper {
-    margin: 0 60px;
-}
 
 .header {
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f3f8fe;
+    color: #1e4159;
+}
+.wrapper {
+    margin: 70px 60px 0 60px;
 }
 
 .head-li {
@@ -33,7 +40,8 @@ li {
 }
 
 .header-logo {
-    font-style: 35px;
+    font-size: 22px;
+    color: #1e4159;
 }
 
 .header-nav {
@@ -43,7 +51,6 @@ li {
 
 .header-link {
     text-decoration: none;
-    color: var(--blacked);
 }
 
 
@@ -65,29 +72,100 @@ li {
     font-style: 1.3rem;
     margin: 0 0 45px 0;
 }
+
 .title {
     width: 463px;
     font-size: 6rem;
     margin: 0 0 50px 0;
 }
+
 .v-designer__txt {
     width: 417px;
     line-height: 24px;
     font-style: 1.1rem;
 }
 
-.v-designer__right {
-
-}
+.v-designer__right {}
 
 .logos {
     margin: 40px 0;
-    width: 100%;    
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 .logos-svg {
     max-width: 117px;
+}
+
+.about {
+    display: flex;
+    padding: 75px 100px;
+    row-gap: 20px;
+    justify-content: space-between;
+}
+
+.about-children {
+    width: 330px;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.about-children img {}
+
+.pr-design {}
+
+.about__title {
+    font-size: 27px;
+    color: var(--blacked);
+    margin: 66px 0 0 0;
+}
+
+.about__text-item {
+    margin: 32px 0 0 0;
+    line-height: 22px;
+    font-size: 17px;
+}
+
+.latest-work {
+
+}
+
+.latest-work-title {
+    font-size: 32px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+
+}
+
+.first-row {
+    margin-top: 60px;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    margin: 0 95px;
+}
+
+.work-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.work-text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+.second-row {
+    margin-top: 60px;
 }
