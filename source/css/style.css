@@ -140,7 +140,7 @@ li {
 
 .row {
     display: flex;
-
+    justify-content: space-evenly;
 }
 
 .first-row {
