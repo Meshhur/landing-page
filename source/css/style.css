@@ -31,6 +31,7 @@ li {
     background: #f3f8fe;
     color: #1e4159;
 }
+
 .wrapper {
     margin: 70px 60px 0 60px;
 }
@@ -69,7 +70,7 @@ li {
 }
 
 .subtitle {
-    font-style: 1.3rem;
+    font-size: 1.3rem;
     margin: 0 0 45px 0;
 }
 
@@ -81,18 +82,15 @@ li {
 
 .v-designer__txt {
     width: 417px;
-    line-height: 24px;
-    font-style: 1.1rem;
+    line-height: 25px;
+    font-size: 1.1rem;
 }
-
-.v-designer__right {}
 
 .logos {
     margin: 40px 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .logos-svg {
@@ -102,7 +100,7 @@ li {
 .about {
     display: flex;
     padding: 75px 0;
-    row-gap: 20px;
+    gap: 20px;
     justify-content: space-evenly;
 }
 
@@ -111,10 +109,6 @@ li {
     text-align: center;
     padding: 60px 40px;
 }
-
-.about-children img {}
-
-.pr-design {}
 
 .about__title {
     font-size: 27px;
@@ -128,9 +122,7 @@ li {
     font-size: 17px;
 }
 
-.latest-work {
-
-}
+.latest-work {}
 
 .latest-work-title {
     font-size: 32px;
@@ -141,6 +133,7 @@ li {
 .row {
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
 }
 
 .first-row {
@@ -170,9 +163,10 @@ li {
     margin-top: 60px;
 }
 
-.Comments {
+.comments {
     margin: 80px 0;
 }
+
 .client {
     font-size: 32px;
     text-align: center;
@@ -181,6 +175,7 @@ li {
 .client__cards {
     display: flex;
     justify-content: space-evenly;
+    gap: 16px;
 }
 
 .client-card {
@@ -191,6 +186,7 @@ li {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .client__txt {
     color: var(--blacked);
     font-size: 20px;
@@ -198,6 +194,7 @@ li {
     line-height: 30px;
     font-weight: 600;
 }
+
 .com_img {
     display: flex;
     margin: 0 103px 32px 28px;
@@ -220,20 +217,399 @@ li {
 
 
 .contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1340px;
+    margin: 30px auto;
 }
+
 .last {
+    max-width: 360px;
 }
+
 .last-head {
+    font-size: 32px;
+    margin: 0;
 }
+
 .last-txt {
+    font-size: 17px;
+    margin: 35px 0 53px 0;
+    line-height: 27px;
 }
+
 .icons {
+    display: flex;
 }
+
 .last-icon {
+    margin-right: 16px;
+    width: 36px;
+    height: 36px;
 }
+
+.t-area {
+    height: 215px;
+    margin-bottom: 43px;
+    width: 640px;
+    padding: 33px;
+    transition: all .1s;
+}
+
+.t-area::placeholder {
+    text-indent: 0px;  
+    transition: text-indent 0.5s ease;
+}
+
+.t-area:focus::placeholder {
+    text-indent: -240px;
+    transition: text-indent 0.5s ease;
+}
+
 .last-form {
+    display: flex;
+    flex-direction: column;
 }
+
 .form-input {
+    width: 640px;
+    margin-bottom: 18px;
+    height: 70px;
+    padding: 33px;
 }
+
+
+.form-input::placeholder {
+    text-indent: 0px;  
+    transition: text-indent 0.5s ease;
+}
+
+.form-input:focus::placeholder {
+    text-indent: -60px;
+    transition: text-indent 0.5s ease;
+}
+
 .form-submit {
+    width: 235px;
+    height: 80px;
+    background-color: var(--blacked);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    transition: all .3s;
+}
+
+.form-submit:hover {
+    opacity: 0.8;
+    transition: all .3s;
+}
+
+@media (max-width:1210px) {
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .title {
+        font-size: 4.4rem;
+    }
+
+    .v-designer__txt {
+        line-height: 21px;
+        font-size: 0.9rem;
+        max-width: 410px;
+    }
+
+    .v-designer__right img{
+        max-width: 400px;
+    }
+
+    .logos-svg {
+        max-width: 90px;
+    }
+
+    .about-children {
+        max-width: 300px;
+        padding: 40px 20px;
+    }
+
+    .about-children img {
+        max-width: 120px;
+    }
+
+    .about__title {
+        font-size: 25px;
+        margin:  35px 0 0 0;
+    }
+
+    .about__text-item {
+        margin-top: 14px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .latest-work-title {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .work img {
+        max-width: 310px;
+    }
+
+    .work-title {
+        font-size: 18px;
+        margin-top: 22px;
+    }
+
+    .work-text {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 8px;
+    }
+
+    .comments {
+        margin: 60px 0;
+    }
+
+    .client {
+        font-size: 30px;
+    }
+
+    .client-card {
+        max-width: 330px;
+        max-height: 400px;
+    }
+
+    .client__txt {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 22px 45px 0 25px;
+
+    }
+
+    .com_img {
+        margin: 0 0 30px 25px;
+    }
+
+    .com_girl {
+        max-width: 45px;
+        max-height: 45px;
+    }
+
+    .stars {
+        margin: 0 0 0 16px;
+    }
+
+    .stars img {
+        max-width: 17px;
+        margin: 0 7px 0 0;
+    }
+
+    .contact {
+        gap: 16px;
+    }
+
+    .last {
+        min-width: 300px;
+        max-width: 340px;
+    }
+
+    .last-head {
+        font-size: 28px;
+    }
+
+    .last-txt {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 30px 0 40px 0;
+    }
+
+    .last-icon {
+        margin-right: 14px;
+        max-width: 33px;
+    }
+
+    .form-input {
+        max-width: 600px;
+        margin-bottom: 17px;
+        max-height: 60px;
+        padding: 30px;
+    }
+
+    .t-area {
+        max-width: 600px;
+        max-height: 200px;
+    }
+
+}
+
+
+@media(max-width:1020px) {
+    .work img {
+        max-width: 260px;
+    }
+}
+
+
+
+@media(max-width:1000px) {
+    .wrapper {
+        margin: 70px 30px;
+    }
+
+    .v-designer {
+        max-height: 600px;
+    }
+
+    .v-designer__left {
+        max-width: 400px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+        margin-bottom: 22px;
+    }
+
+    .title {
+        font-size: 3.8rem;
+        margin-bottom: 50px;
+        max-width: 400px;
+    }
+
+    .v-designer__txt {
+        line-height: 21px;
+        font-size: 0.9rem;
+        max-width: 360px;
+    }
+
+    .v-designer__right img{
+        max-width: 320px;
+    }
+
+
+
+    .logos {
+        gap: 50px;
+    }
+
+    .logos-svg {
+        max-width: 70px;
+        max-height: 40px;
+    }
+
+    .about {
+        padding: 30px 0;
+        gap: 8px;
+    }
+
+    .about-children {
+        max-width: 270px;
+        padding: 20px 4px;
+    }
+
+    .about-children img {
+        max-width: 100px;
+    }
+
+    .about__title {
+        font-size: 22px;
+        margin:  35px 0 0 0;
+    }
+
+    .about__text-item {
+        margin-top: 14px;
+        font-size: 15px;
+        line-height: 21px;
+        min-width: 225px;
+    }
+
+
+    .work img {
+        max-width: 225px;
+    }
+
+    .comments {
+        margin: 60px 0;
+    }
+
+    .client__cards {
+        gap: 10px;
+    }
+
+    .client-card {
+        min-width: 235px;
+        max-height: 340px;
+    }
+
+    .client__txt {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 18px 20px;
+
+    }
+
+    .com_img {
+        margin: 0 0 30px 25px;
+    }
+
+    .com_girl {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .stars {
+        margin: 0 0 0 14px;
+    }
+
+    .stars img {
+        max-width: 14px;
+        margin: 0 7px 0 0;
+    }
+
+    .stars pre {
+        font-size: 15px;
+    }
+
+    .contact {
+        gap: 16px;
+    }
+
+    .last-head {
+        font-size: 26px;
+    }
+
+    .last-txt {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 28px 0 36px 0;
+    }
+
+    .last-icon {
+        max-width: 25px;
+        margin-right: 25px;
+    }
+
+    .form-input {
+        max-width: 400px;
+        margin-bottom: 17px;
+        max-height: 35px;
+        padding: 20px;
+    }
+
+    .t-area {
+        max-width: 400px;
+        max-height: 130px;
+        padding: 15px;
+    }
+
+    .form-submit {
+        max-width: 200px;
+        max-height: 60px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+
 }
