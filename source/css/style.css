@@ -414,6 +414,7 @@ li {
     }
 
     .contact {
+        margin: 100px auto;
         gap: 16px;
     }
 
@@ -620,7 +621,7 @@ li {
 }
 
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     .v-designer {
         flex-wrap: wrap;
         min-height: 900px;
@@ -725,6 +726,10 @@ li {
 
     .nav {
         display: none;
+    }
+
+    .last-form {
+        margin-top: 30px;
     }
 
     .form-input {
