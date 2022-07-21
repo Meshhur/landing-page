@@ -32,6 +32,10 @@ li {
     color: #1e4159;
 }
 
+.react-svg {
+    display: none;
+}
+
 .wrapper {
     margin: 70px 60px 0 60px;
 }
@@ -252,6 +256,7 @@ li {
     height: 215px;
     margin-bottom: 43px;
     width: 640px;
+    max-width: 640px;
     padding: 33px;
     transition: all .1s;
 }
@@ -541,7 +546,7 @@ li {
 
     .client-card {
         min-width: 235px;
-        max-height: 340px;
+        max-height: 380px;
     }
 
     .client__txt {
@@ -612,4 +617,122 @@ li {
         line-height: 26px;
     }
 
+}
+
+
+@media(max-width:768px) {
+    .v-designer {
+        flex-wrap: wrap;
+        min-height: 900px;
+    }
+
+    .v-designer__left {
+        max-width: 300px;
+        margin: 50px auto;
+    }
+
+    .v-designer__right {
+        margin: 50px auto;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 23px;
+    }
+
+    .title {
+        font-size: 2.9rem;
+        margin-bottom: 50px;
+        max-width: 300px;
+    }
+
+    .v-designer__txt {
+        line-height: 21px;
+        font-size: 0.9rem;
+        max-width: 300px;
+    }
+
+    .v-designer__right img{
+        max-width: 300px;
+    }
+
+
+
+    .logos {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .logos-svg {
+        max-width: 60px;
+        max-height: 30px;
+    }
+
+    .about {
+        padding: 30px 0;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .about-children {
+        margin: 0 auto;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .work img {
+        max-width: 225px;
+    }
+
+    .client__cards {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .client-card {
+        min-width: 235px;
+        height: 380px;
+        margin: 20px auto;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .last {
+        margin: 0 auto;
+    }
+
+    .last-form {
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+    .header-logo {
+        display: none;
+    }
+
+    .react-svg {
+        display: block;
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .form-input {
+        max-width: 320px;
+        max-height: 40px;
+    }
+
+    .t-area {
+        max-width: 320px;
+    }
 }
